@@ -6,7 +6,6 @@ This is a commnd line tool to scan your source code/artifact with SSD supported 
 ## Installation
 
 ```bash
-curl -L -o ssd-scanner-cli https://github.com/OpsMx/ssd-scanner-cli-public/releases/latest/download/ssd-scanner-cli
-sudo chmod +x ./ssd-scanner-cli
-sudo cp ssd-scanner-cli /usr/local/bin
+curl -L -o install_ssd_scanner_cli.sh https://raw.githubusercontent.com/OpsMx/ssd-scanner-cli-public/refs/heads/main/install_ssd_scanner_cli.sh && chmod +x install_ssd_scanner_cli.sh && ./install_ssd_scanner_cli.sh
+
 ```
