@@ -1,5 +1,43 @@
 #!/bin/bash
 
+# Function to install sudo and curl
+install_sudo_and_curl() {
+  # Check if both sudo and curl are installed
+  if ! command -v sudo >/dev/null || ! command -v curl >/dev/null; then
+    if command -v apt >/dev/null; then
+      echo "Detected Debian-based system. Installing sudo and curl using apt."
+      apt update && apt install -y sudo curl
+    elif command -v yum >/dev/null; then
+      echo "Detected Red Hat-based system. Installing sudo and curl using yum."
+      yum install -y sudo curl
+    elif command -v dnf >/dev/null; then
+      echo "Detected Fedora-based system. Installing sudo and curl using dnf."
+      dnf install -y sudo curl
+    elif command -v zypper >/dev/null; then
+      echo "Detected openSUSE-based system. Installing sudo and curl using zypper."
+      zypper install -y sudo curl
+    elif command -v apk >/dev/null; then
+      echo "Detected Alpine Linux system. Installing sudo and curl using apk."
+      apk add --no-cache sudo curl
+    elif command -v pacman >/dev/null; then
+      echo "Detected Arch-based system. Installing sudo and curl using pacman."
+      pacman -Sy --noconfirm sudo curl
+    else
+      echo "Package manager not found. Please install sudo and curl manually."
+      exit 1
+    fi
+  fi
+}
+
+# Check if sudo or curl is installed
+install_sudo_and_curl
+
+# Re-check if sudo is now available
+if ! command -v sudo >/dev/null; then
+  echo "Failed to install sudo. Please install it manually and rerun the script."
+  exit 1
+fi
+
 # Detect system architecture
 ARCH=$(uname -m)
 case "$ARCH" in
