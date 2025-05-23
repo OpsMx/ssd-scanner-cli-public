@@ -60,7 +60,7 @@ case "$ARCH" in
 esac
 
 # Define the URL
-URL="https://github.com/OpsMx/ssd-scanner-cli-public/releases/download/v2025.05.03-alpha2/ssd-scanner-cli-${ARCH}"
+URL="https://github.com/OpsMx/ssd-scanner-cli-public/releases/download/v2025.05.03-alpha3/ssd-scanner-cli-${ARCH}"
 
 # Download the CLI
 echo "Downloading ssd-scanner-cli for architecture: $ARCH"
