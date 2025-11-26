@@ -3,10 +3,10 @@
 # SSD Firewall CLI Installer
 #
 # Usage:
-#   curl -sSL https://raw.githubusercontent.com/OpsMx/ssd-firewall-cli/main/install.sh | bash
+#   curl -sSL https://raw.githubusercontent.com/OpsMx/ssd-scanner-cli-public/main/install-firewall.sh | bash
 #
 # Or with a specific version:
-#   curl -sSL https://raw.githubusercontent.com/OpsMx/ssd-firewall-cli/main/install.sh | bash -s -- v1.0.0
+#   curl -sSL https://raw.githubusercontent.com/OpsMx/ssd-scanner-cli-public/main/install-firewall.sh | bash -s -- v1.0.0
 #
 
 set -e
