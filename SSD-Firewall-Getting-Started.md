@@ -10,7 +10,7 @@ A quick guide to evaluating security scan results against OPA policies.
 |-----------|-------------|-------------------|
 | `vulnerability` | Detect CVEs by severity | Trivy, Grype, Syft |
 | `secret-scan` | Detect exposed secrets | Trivy |
-| `license-scan` | Check software licenses | Trivy, Syft |
+| `license-scan` | Check software licenses | Trivy |
 | `sast-scan` | Static code analysis | Semgrep, OpenGrep |
 | `pod-security` | Kubernetes security checks | Kubescape |
 | `artifact-integrity` | Verify artifact signatures |  |
