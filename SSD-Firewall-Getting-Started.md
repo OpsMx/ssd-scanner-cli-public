@@ -12,7 +12,7 @@ A quick guide to evaluating security scan results against OPA policies.
 | `secret-scan` | Detect exposed secrets | Trivy |
 | `license-scan` | Check software licenses | Trivy, Syft |
 | `sast-scan` | Static code analysis | Semgrep, OpenGrep |
-| `pod-security` | Kubernetes security checks | Kubescape, kube-bench |
+| `pod-security` | Kubernetes security checks | Kubescape |
 | `artifact-integrity` | Verify artifact signatures |  |
 | `security-scorecard` | OpenSSF Scorecard checks | OSSF Scorecard |
 
