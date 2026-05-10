@@ -270,11 +270,3 @@ You hit one of the §6.3 not-bundleable cases. Read the error message — it tel
 ### Cache populated but bootstrap re-downloads on a different host
 Bundles are platform-specific (§6.4). Re-run `prepare-toolchains` on the matching OS family, or inside the slim image.
 
----
-
-## 10. Reference
-
-- [`cdxgen-firewall-allowlist.md`](cdxgen-firewall-allowlist.md) — exact domains and per-customer templates
-- `Dockerfile.slim` (repo root) — image build reference
-- `prepare-toolchains --help` — current flag list and accepted languages
-- ADR `0001-cdxgen-toolchain-distribution.md` — design rationale
