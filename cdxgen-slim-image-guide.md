@@ -1,9 +1,5 @@
 # CDXGen Slim Image — Customer Guide
 
-**Audience:** Engineers running SBOM scans with the SSD scanner. Security/network reviewers can skip to §[Firewall allowlist](#7-firewall-allowlist).
-
-**Companion doc:** [`cdxgen-firewall-allowlist.md`](cdxgen-firewall-allowlist.md) — exact outbound HTTPS domains.
-
 ---
 
 ## 1. What it is, when to use it
